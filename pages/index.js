@@ -9,9 +9,7 @@ export default function Home() {
   return (
     <Wrapper>
       {address ? (
-        <WalletConnect>
           <Dashboard address={address} />
-        </WalletConnect>
       ) : (
         <WalletConnect>
           <Button onClick={connectWithMetamask}>Connect Metamask Wallet</Button>
@@ -32,7 +30,7 @@ const Wrapper = styled.div`
   background-color: #0a0b0d;
   color: white;
   display: grid;
-  place-items: center
+  place-items: center;
 `
 
 const WalletConnect = styled.div`

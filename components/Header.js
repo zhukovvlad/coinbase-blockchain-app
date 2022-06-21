@@ -4,6 +4,7 @@ import styled from 'styled-components';
 const Header = () => {
   return (
     <Wrapper>
+        <Title>Assets</Title>
         <ButtonsContainer>
             <Button style={{ backgroundColor: '#3773f5', color: '#000' }}>
                 Buy / Sell
@@ -26,7 +27,7 @@ const Wrapper = styled.div`
 
 const Title = styled.div`
     font-size: 2rem;
-    font-weight: 500;
+    font-weight: 600;
     flex: 1;
 `
 
