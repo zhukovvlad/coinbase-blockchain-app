@@ -1,5 +1,6 @@
-import styled from 'styled-components'
-import { useAddress, useDisconnect, useMetamask } from '@thirdweb-dev/react'
+import styled from 'styled-components';
+import { useAddress, useDisconnect, useMetamask } from '@thirdweb-dev/react';
+import Dashboard from './Dashboard';
 
 export default function Home() {
   const connectWithMetamask = useMetamask();
@@ -9,8 +10,7 @@ export default function Home() {
     <Wrapper>
       {address ? (
         <WalletConnect>
-          <h4>Connected with {address}</h4>
-          <Button onClick={disconnectFromMetamask}>Disconnect</Button>
+          <Dashboard address={address} />
         </WalletConnect>
       ) : (
         <WalletConnect>
